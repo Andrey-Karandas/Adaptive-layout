@@ -21,6 +21,7 @@ body
     padding: 0px 30px
   @media  ( min-width: 1024px )
     padding: 0px
+    max-width: 100%
 
 .header
 
@@ -107,53 +108,31 @@ body
   &__title
     @media  ( min-width: 320px )
       font-size: 60px
-      margin: 0px 0px 49px 0px
+      margin: 0px 0px 19px 0px
       color: #FFFFFF
     @media  ( min-width: 1024px )
       font-size: 100px
-      margin: 0px 0px 19px 0px
 
   &__subtitle
     @media  ( min-width: 320px )
-      font-size: 40px
-      margin: 0px 0px 480px 0px
-      letter-spacing: 2.74286px
-      color: #FCBB08
-    @media  ( min-width: 1024px )
       font-size: 16px
       margin: 0px 0px 180px 0px
+      letter-spacing: 2.74286px
+      color: #FCBB08
 
   &__mouse
+    img
+      cursor: pointer
 
 .title
   @media  ( min-width: 320px )
-    margin: 0px 0px 40px 0px
     font-size: 30px
     font-weight: 700
     letter-spacing: -1.65px
     color: #242121
-    position: relative
-    &::after
-      content: ''
-      position: absolute
-      width: 0
-      height: 0
-      left: 0
-      top: 0
-  @media  ( min-width: 375px )
-    font-size: 35px
   @media  ( min-width: 1024px )
     margin: 0px
-    font-size: 48px
-    position: relative
-    &::after
-      content: ''
-      position: absolute
-      width: 60px
-      height: 4px
-      left: 0px
-      top: 80px
-      background: #FCBB08
+    font-size: 60px
 
 .about
   @media  ( min-width: 320px )
@@ -161,7 +140,6 @@ body
     padding: 50px 0px
   @media  ( min-width: 1024px )
     padding: 100px 40px
-
   @media  ( min-width: 1440px )
     padding: 143px 135px 159px 135px
 
@@ -174,36 +152,48 @@ body
       justify-content: space-between
 
   &__title
+    @media ( min-width: 320px )
+      margin: 0px 0px 40px 0px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        left: 0
+        top: 0
+    @media ( min-width: 1024px )
+      font-size: 48px
+      margin: 0px 0px 0px 0px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 60px
+        height: 4px
+        left: 0px
+        top: 80px
+        background: #FCBB08
 
   &__text
     @media  ( min-width: 320px )
       text-align: justify
       padding: 0px 30px
-      font-size: 20px
-      line-height: 25px
+      font-size: 14px
+      line-height: 24px
       font-family: Open Sans
       font-weight: 300
       color: #373A39
       p
-        margin: 0px 0px 30px 0px
+        margin: 0px 0px 15px 0px
         -webkit-line-clamp: 10
         display: -webkit-box
         -webkit-box-orient: vertical
         overflow: hidden
         &:last-child
           margin: 0px 0px 0px 0px
-
-    @media  ( min-width: 375px )
-      font-size: 23px
-
     @media ( min-width: 1024px )
-      font-size: 14px
-      line-height: 24px
       padding: 0px 0px 0px 0px
-      p
-        margin: 0px 0px 15px 0px
-        &:last-child
-          margin: 0px 0px 0px 0px
 
 .expertise
   @media  ( min-width: 320px )
@@ -217,9 +207,26 @@ body
     @media ( min-width: 320px )
       text-align: center
       margin: 0px 0px 60px 0px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        left: 0
+        top: 0
     @media  ( min-width: 1024px )
-      text-align-last: left
+      text-align: left
       margin: 0px 0px 107px 0px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 60px
+        height: 4px
+        left: 0px
+        top: 80px
+        background: #FCBB08
 
   &__row
     @media  ( min-width: 320px )
@@ -271,21 +278,15 @@ body
       color: #373A39
       flex: 1 1 auto
       padding: 0px 30px
-      font-size: 20px
-      line-height: 25px
+      font-size: 14px
+      line-height: 24px
       text-align: justify
-
       p
         margin: 0px 0px 15px 0px
         &:last-child
           margin: 0px 0px 0px 0px
-    @media ( min-width: 375px )
-      font-size: 23px
     @media  ( min-width: 1024px )
       padding: 0px 0px 0px 30px
-      margin: 0px
-      font-size: 14px
-      line-height: 24px
 
 .item
 
@@ -315,28 +316,23 @@ body
 
   &__description
     @media   ( min-width: 320px  )
-      font-size: 20px
-      line-height: 25px
+      font-size: 14px
+      line-height: 24px
       text-align: justify
       font-family: Open Sans
       font-weight: 300
       color: #777777
-    @media   ( min-width: 1024px  )
-      font-size: 14px
-      line-height: 24px
 
   &__title
     @media   ( min-width: 320px  )
-      font-size: 20px
-      margin: 0px 0px 18px 0px
+      font-size: 14px
+      margin: 0px 0px 14px 0px
       text-align: center
       font-family: Raleway
       font-weight: bold
       letter-spacing: 4.29px
       color: #333333
     @media   ( min-width: 1024px  )
-      font-size: 14px
-      margin: 0px 0px 14px 0px
       text-align-last: left
 
 .magic
@@ -351,7 +347,6 @@ body
 
   &__column
     @media  ( min-width: 320px )
-      margin: 0px 0px 30px 0px
       max-width: 100%
       &:last-child
         margin: 0px 0px 0px 0px
@@ -360,9 +355,10 @@ body
         height: 100%
     @media  ( min-width: 1024px )
       flex: 0 1 50%
-      margin: 0px 0px 0px 0px
 
   &__content
+    @media  ( min-width: 320px )
+      padding: 50px 0px
     @media  ( min-width: 1024px )
       padding: 50px
 
@@ -372,49 +368,42 @@ body
   &__title
     @media  ( min-width: 320px )
       text-align: center
-      margin: 0px 0px 50px 0px
-      font-size: 30px
-    @media  ( min-width: 375px )
-      font-size: 35px
-    @media  ( min-width: 1024px )
-      text-align: left
-      font-size: 60px
-      line-height: 75px
       margin: 0px 0px 67px 0px
       position: relative
       &::after
         content: ''
         position: absolute
+        width: 0
+        height: 0
+        left: 0
+        top: 0
+    @media  ( min-width: 1024px )
+      text-align: left
+      line-height: 75px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 60px
+        height: 4px
         top: 170px
+        background: #FCBB08
 
   &__text
     @media  ( min-width: 320px )
       font-family: Open Sans
       font-weight: 300
       color: #373A39
-      font-size: 20px
-      line-height: 25px
+      font-size: 14px
+      line-height: 24px
       padding: 0px 30px
       text-align: justify
       p
-        margin: 0px 0px 30px 0px
-        -webkit-line-clamp: 10
-        display: -webkit-box
-        -webkit-box-orient: vertical
-        overflow: hidden
-    @media  ( min-width: 375px )
-      font-size: 23px
-
-    @media  ( min-width: 1024px )
-      font-size: 14px
-      line-height: 24px
-      padding: 0px
-      p
         margin: 0px 0px 15px 0px
-        -webkit-line-clamp: 100
-        display: -webkit-box
-        -webkit-box-orient: vertical
-        overflow: hidden
+        &:last-child
+          margin: 0px 0px 0px 0px
+    @media  ( min-width: 1024px )
+      padding: 0px
 
 .portfolio
   @media  ( min-width: 320px )
@@ -437,9 +426,24 @@ body
 
   &__title
     @media  ( min-width: 320px )
-      font-size: 30px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        left: 0
+        top: 0
     @media  ( min-width: 1024px )
-      font-size: 60px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 60px
+        height: 4px
+        left: 0px
+        top: 80px
+        background: #FCBB08
 
 .portfolio-menu
 
@@ -508,7 +512,7 @@ body
       flex-wrap: wrap
     @media  ( min-width: 1024px )
       flex-wrap: nowrap
-      justify-content: space-between
+      justify-content: flex-start
 
   &__column
     @media  ( min-width: 320px )
@@ -518,28 +522,20 @@ body
       &:last-child
         margin: 0px 0px 0px 0px
     @media  ( min-width: 1024px )
+      flex: 0 1 25%
       min-width: 343px
-      padding: 0px 30px 0px 0px
+      padding: 0px 22px 0px 0px
       margin: 0px 0px 0px 0px
-      &:nth-child(3)
+      &:last-child
         padding: 0px 0px 0px 0px
-      &:nth-child(4)
-        padding: 0px 0px 0px 0px
-    @media  ( min-width: 1031px )
-      &:nth-child(3)
-        padding: 0px 30px 0px 0px
-      &:nth-child(4)
-        padding: 0px 30px 0px 0px
-    @media  ( min-width: 1440px )
-      &:nth-child(n+1)
-        padding: 0px 0px 0px 0px
-        margin: 0px 0px 0px 0px
 
   &__column-one
     @media  ( min-width: 320px )
       width: 100%
       height: 494px
       background: #EDEDED
+      margin: 0px 0px 15px 0px
+    @media  ( min-width: 1024px )
       margin: 0px 0px 23px 0px
 
   &__column-two
@@ -559,6 +555,8 @@ body
       display: flex
       flex-direction: column
       justify-content: center
+      margin: 0px 0px 15px 0px
+    @media  ( min-width: 1024px )
       margin: 0px 0px 23px 0px
 
   &__column-title
@@ -580,6 +578,8 @@ body
       width: 100%
       height: 288px
       background: #EDEDED
+      margin: 0px 0px 15px 0px
+    @media  ( min-width: 1024px )
       margin: 0px 0px 23px 0px
 
   &__column-five
@@ -593,6 +593,8 @@ body
       width: 100%
       height: 367px
       background: #EDEDED
+      margin: 0px 0px 15px 0px
+    @media  ( min-width: 1024px )
       margin: 0px 0px 23px 0px
 
   &__column-seven
@@ -606,6 +608,8 @@ body
       width: 100%
       height: 318px
       background: #EDEDED
+      margin: 0px 0px 15px 0px
+    @media  ( min-width: 1024px )
       margin: 0px 0px 23px 0px
 
   &__column-nine
@@ -616,7 +620,7 @@ body
 
 .footer-gallery
   @media ( min-width: 320px )
-    margin: 0px 0px 65px 0px
+    margin: 0px 0px 60px 0px
     background: #F6F8FA
   @media ( min-width: 1024px )
     margin: 0px 0px 130px 0px
@@ -629,17 +633,15 @@ body
       justify-content: center
 
   &__text
-    font-weight: bold
-    letter-spacing: 1.2px
-    color: #242121
     @media  ( min-width: 320px )
-      font-size: 20px
-    @media ( min-width: 1024px )
       font-size: 14px
+      font-weight: bold
+      letter-spacing: 1.2px
+      color: #242121
 
 .info
   @media  ( min-width: 320px )
-    padding: 0px 0px 60px 0px
+    padding: 50px 0px
     font-family: Merriweather
   @media  ( min-width: 1024px )
     padding: 50px
@@ -656,18 +658,13 @@ body
 
   &__description
     @media  ( min-width: 320px )
-      color: #242121
-      text-align: center
-      font-size: 20px
-      line-height: 25px
-      padding: 0px 30px
-      margin: 0px 0px 30px 0px
-      color: #242121
-    @media  ( min-width: 1024px )
       font-style: italic
       font-weight: 300
+      color: #242121
+      text-align: center
       font-size: 18px
       line-height: 36px
+      padding: 0px 30px
       margin: 0px 0px 50px 0px
 
   &__author
@@ -675,7 +672,6 @@ body
       color: #9E9E9E
       text-align: center
       font-size: 18px
-    @media  ( min-width: 1024px )
       margin: 0px 0px 148px 0px
 
 .video
@@ -690,7 +686,7 @@ body
 
 .statistics
   @media  ( min-width: 320px )
-    padding: 30px 0px
+    padding: 50px 0px
   @media  ( min-width: 1024px )
     padding: 165px 0px
   @media  ( min-width: 1440px )
@@ -718,23 +714,20 @@ body
       font-weight: bold
       color: #242121
       text-align: center
-      margin: 0px 0px 15px 0px
+      margin: 0px 0px 9px 0px
       font-size: 40px
     @media  ( min-width: 1024px )
-      margin: 0px 0px 9px 0px
       font-size: 60px
 
   &__text
     @media  ( min-width: 320px )
       font-family: Open Sans
       color: #00B2A0
-      font-size: 20px
-    @media  ( min-width: 1024px )
       font-size: 14px
 
 .show
   @media  ( min-width: 320px )
-    padding: 30px 0px
+    padding: 50px 0px
     background: #F6F8FA
   @media  ( min-width: 1024px )
     padding: 307px 100px 114px 100px
@@ -745,12 +738,11 @@ body
     @media  ( min-width: 320px )
       font-weight: bold
       color: #242121
-      font-size: 15px
-      text-align: center
+      font-size: 18px
       padding: 0px 30px
       margin: 0px 0px 15px 0px
-    @media  ( min-width: 375px )
-      font-size: 18px
+    @media  ( min-width: 768px )
+      text-align: center
     @media  ( min-width: 1024px )
       font-size: 40px
       line-height: 52px
@@ -783,28 +775,22 @@ body
       font-family: Open Sans
       font-weight: 300
       color: #777777
-      margin: 0px 0px 30px 0px
       text-align: justify
       font-size: 14px
-      line-height: 20px
+      line-height: 24px
       padding: 0px 30px
-      -webkit-line-clamp: 10
-      display: -webkit-box
-      -webkit-box-orient: vertical
-      overflow: hidden
-    @media  ( min-width: 375px )
-      font-size: 16px
+      margin: 0px 0px 30px 0px
     @media  ( min-width: 768px )
       text-align: center
     @media  ( min-width: 1024px )
-      font-size: 14px
-      line-height: 24px
-      text-align-last: left
+      text-align: left
       padding: 0px 0px 0px 30px
       margin: 0px 0px 197px 0px
 
   &__pagination
     @media  ( min-width: 320px )
+      padding: 0px 30px
+    @media  ( min-width: 768px )
       text-align: center
     @media  ( min-width: 1024px )
       text-align: left
@@ -829,7 +815,7 @@ body
 
 .our
   @media  ( min-width: 320px )
-    padding: 30px 0px
+    padding: 50px 0px
   @media  ( min-width: 1024px )
     padding: 120px 100px 164px 100px
 
@@ -838,11 +824,16 @@ body
 
   &__title
     @media  ( min-width: 320px )
-      font-size: 30px
       margin: 0px 0px 50px 0px
       text-align: center
-    @media  ( min-width: 375px )
-      font-size: 35px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        left: 0
+        top: 0
     @media  ( min-width: 1024px )
       margin: 0px 0px 102px 0px
       text-align: left
@@ -850,7 +841,10 @@ body
       &::after
         content: ''
         position: absolute
-        top: 50px
+        top: 80px
+        width: 60px
+        height: 4px
+        background: #FCBB08
 
   &__row
     @media  ( min-width: 320px )
@@ -867,15 +861,14 @@ body
       padding: 0px 30px
     @media  ( min-width: 1024px )
       padding: 0px 15px
+      flex: 0 1 33.333%
 
   &__photo
     @media  ( min-width: 320px )
-      margin: 0px 0px 10px 0px
+      margin: 0px 0px 35px 0px
       max-width: 100%
       img
         width: 100%
-    @media  ( min-width: 1024px )
-      margin: 0px 0px 35px 0px
 
   &__name
     @media  ( min-width: 320px )
@@ -884,8 +877,6 @@ body
       font-size: 18px
       font-weight: bold
       color: #333333
-    @media  ( min-width: 1024px )
-      margin: 0px 0px 12px 0px
 
   &__profession
     @media  ( min-width: 320px )
@@ -902,24 +893,36 @@ body
 
 .price
   @media  ( min-width: 320px )
-    padding: 30px 0px
+    padding: 50px 0px
     background: #F6F8FA
   @media  ( min-width: 1024px )
     padding: 144px 135px 162px 135px
 
   &__title
     @media  ( min-width: 320px )
-      margin: 0px 0px 50px 0px
-      font-size: 30px
+      margin: 0px 0px 91px 0px
       text-align: center
       padding: 0px 30px
-    @media  ( min-width: 375px )
-      font-size: 35px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        left: 0
+        top: 0
     @media  ( min-width: 1024px )
       text-align: left
-      font-size: 60px
       padding: 0px 0px 0px 0px
-      margin: 0px 0px 91px 0px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 60px
+        height: 4px
+        left: 0px
+        top: 80px
+        background: #FCBB08
 
   &__row
     @media  ( min-width: 320px )
@@ -938,7 +941,7 @@ body
 
 .column-content
   @media  ( min-width: 320px )
-    padding: 24px 0px
+    padding: 24px 0px 53px 0px
     margin: 0px 0px 30px 0px
     background: #FFFFFF
     font-family: Open Sans
@@ -946,20 +949,14 @@ body
     flex-direction: column
   @media  ( min-width: 1024px )
     margin: 0px 0px 0px 0px
-    padding: 24px 0px 53px 0px
 
   &__plan
     @media  ( min-width: 320px )
       font-weight: bold
       color: #242121
-      text-align: center
-      font-size: 30px
-      margin: 0px 0px 15px 0px
-    @media  ( min-width: 1024px )
-      text-align: left
       font-size: 16px
-      margin: 0px 0px 8px 0px
       padding: 0px 0px 0px 25px
+      margin: 0px 0px 8px 0px
 
   &__price
     @media  ( min-width: 320px )
@@ -970,7 +967,6 @@ body
       margin: 0px 0px 30px 0px
     &::before
       content: ''
-      font-weight: 300
       font-size: 40px
       display: inline-block
       width: 23px
@@ -985,23 +981,15 @@ body
       background-image: url('../img/mo.png')
       background-repeat: no-repeat
       background-position: 0 10px
-    @media  ( min-width: 1024px )
-      text-align: center
 
   &__list
     @media  ( min-width: 320px )
       text-align: center
-      font-size: 20px
-    li
-      margin: 0px 0px 30px 0px
-      &:last-child
-        @media  ( min-width: 320px )
-          margin: 0px 0px 40px 0px
-    @media  ( min-width: 1024px )
-      text-align: center
-      font-weight: 300
       font-size: 16px
       line-height: 22px
+      font-weight: 300
+    li
+      margin: 0px 0px 30px 0px
 
   &__choice
     @media  ( min-width: 320px )
@@ -1011,8 +999,6 @@ body
       font-weight: bold
       font-size: 14px
       color: #242121
-    @media  ( min-width: 1024px )
-      text-align: center
 
 .contact
 
@@ -1041,10 +1027,26 @@ body
     @media  ( min-width: 320px )
       text-align: center
       margin: 0px 0px 60px 0px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        left: 0
+        top: 0
     @media  ( min-width: 1024px )
-      font-size: 60px
       text-align: left
       margin: 0px 0px 94px 0px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 60px
+        height: 4px
+        left: 0px
+        top: 80px
+        background: #FCBB08
 
   &__name
     padding: 0px 0px 5% 0px
@@ -1063,7 +1065,7 @@ body
 
   &__btn
     @media  ( min-width: 320px )
-      background: #242121
+      background-color: #242121
       color: #fff
       font-weight: bold
       font-size: 11px
@@ -1071,6 +1073,12 @@ body
       width: 230px
       height: 45px
       margin: 0px auto
+      transition: background-color 2s ease 0s, color 2s ease 0s
+      &:hover
+        transition: all 1s ease 0s
+        background-color: #fff
+        color: #242121
+        border: 2px solid black
     @media  ( min-width: 1024px )
       margin: 0px 0px 0px 0px
 
@@ -1086,7 +1094,7 @@ body
 .social
   @media  ( min-width: 320px )
     background: #373A39
-    padding: 50px 0px 1px 0px
+    padding: 50px 0px
   @media  ( min-width: 1024px )
     padding: 110px 100px 60px 100px
   @media  ( min-width: 1440px )
@@ -1095,14 +1103,12 @@ body
   &__logo
     @media  ( min-width: 320px )
       text-align: center
-      margin: 0px 0px 40px 0px
-    @media  ( min-width: 1024px )
       margin: 0px 0px 73px 0px
 
   &__link
     @media  ( min-width: 320px )
       text-align: center
-      margin: 0px 0px 30px 0px
+      margin: 0px 0px 60px 0px
       a
         font-weight: 300
         font-size: 12px
@@ -1113,7 +1119,6 @@ body
         &:last-child
           margin: 0px 0px 0px 0px
     @media  ( min-width: 1024px )
-      margin: 0px 0px 60px 0px
       a
         display: inline-block
         margin: 0px 0px 0px 0px
@@ -1126,7 +1131,6 @@ body
     font-family: Open Sans
     font-size: 14px
     line-height: 32px
-    text-align: center
     color: #A8A8A8
     margin: 0px 0px 57px 0px
 
@@ -1134,9 +1138,6 @@ body
     @media  ( min-width: 320px )
       display: block
       text-align: center
-      margin: 0px 0px 60px 0px
-    @media  ( min-width: 1024px )
-      margin: 0px 0px 0px 0px
 
 .footer
   background-color: #2A2C2B
