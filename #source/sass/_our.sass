@@ -1,0 +1,49 @@
+.our
+
+  &__title
+    margin: 0px 0px em(100, 60) 0px
+
+  &__row
+    display: flex
+    flex-wrap: wrap
+    margin: 0px -15px
+
+  &__column
+    flex: 1 1 33.333%
+    padding: 0px 15px
+    min-width: 320px
+
+  &__photo
+    margin: 0px 0px 35px 0px
+    img
+      width: 100%
+      object-fit: cover
+
+  &__name
+    font-size: rem(14)
+    line-height: prc(17, 14)
+    font-weight: 700
+    color: #333333
+    text-align: center
+    margin: 0px 0px em(12, 14) 0px
+
+  &__profession
+    font-family: Open Sans
+    font-size: rem(12)
+    line-height: prc(16, 12)
+    font-weight: 300
+    color: #C2C2C2
+    text-align: center
+
+//Media===============================================================================
+@media ( min-width: 767px )
+  .our
+    padding: 120px 0px 164px 0px
+
+//Media=======================================================================
+@media ( max-width: 768px )
+  .our
+    padding: 40px 0px 0px 0px
+
+    &__column
+      margin: 0px 0px 40px 0px

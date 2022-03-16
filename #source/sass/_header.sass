@@ -1,0 +1,78 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 2
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #fff
+
+  &__body
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 20px 50px
+
+  &__logo
+    position: relative
+    z-index: 2
+
+  &__link
+    font-family: Raleway
+    font-size: rem(12)
+    line-height: prc(14, 12)
+    letter-spacing: em(0.6, 12)
+    font-weight: 700
+    color: #373A39
+    position: relative
+    &:hover
+      &::after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: -10px
+        width: 100%
+        height: 2px
+        background-color: #FCBB08
+
+//Media=============================================================================
+@media ( min-width: 992px )
+  .header
+
+    &__burger
+      display: none
+
+    &__list
+      display: flex
+      li
+        margin: 0px 50px 0px 0px
+        &:last-child
+          margin: 0px 0px 0px 0px
+//Media=============================================================================
+@media ( max-width: 992px )
+  .header
+
+    &__menu
+      display: none
+      position: relative
+      z-index: 4
+
+    &__burger
+      position: relative
+      z-index: 3
+      width: 40px
+      height: 20px
+    span
+      display: block
+      width: 100%
+      height: 3px
+      background-color: black
+      margin: 0px 0px 7px 0px
+      &:last-child
+        margin: 0px 0px 0px 0px

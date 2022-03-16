@@ -1,0 +1,36 @@
+.about
+  background: #F6F8FA
+  padding: 140px 0px 150px 0px
+
+  &__title
+    font-size: rem(48)
+
+  &__text
+    font-family: Open Sans
+    font-size: rem(14)
+    line-height: em(24, 14)
+    font-weight: 300
+    color: #373A39
+    p
+      margin: 0px 0px em(15, 14) 0px
+      &:last-child
+        margin: 0px 0px 0px 0px
+
+//Media=======================================================================
+@media ( min-width: 992px )
+  .about
+
+    &__row
+      display: flex
+
+    &__title
+      flex: 0 1 30%
+
+    &__text
+      flex: 0 1 70%
+//Media=======================================================================
+@media ( max-width: 992px )
+  .about
+
+    &__title
+      margin: 0px 0px em(40, 48) 0px

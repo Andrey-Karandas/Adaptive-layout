@@ -1,0 +1,83 @@
+.expertise
+  padding: 140px 0px 160px 0px
+
+  &__title
+    margin: 0px 0px em(80, 60) 0px
+
+  &__row
+    &:last-child
+      display: flex
+      flex-wrap: wrap
+      margin: 0px -15px
+
+  &__column
+    flex: 1 1 33.333%
+    padding: 0px 15px
+
+  &__image
+    img
+      max-width: 100%
+      margin: 0px 0px 28px 0px
+      &:last-child
+        margin: 0px 0px 0px 0px
+
+  &__text
+    p
+      margin: 0px 0px em(15, 14) 0px
+      &:last-child
+        margin: 0px 0px 0px 0px
+
+.item
+
+  &__row
+    display: flex
+
+  &__column
+    margin: 0px 30px 0px 0px
+    &:last-child
+      margin: 0px 0px 0px 0px
+
+  &__title
+    font-family: Raleway
+    font-size: rem(14)
+    line-height: 1.42
+    font-weight: 700
+    letter-spacing: 4.29px
+    color: #333333
+    margin: 0px 0px em(14, 14) 0px
+
+  &__text
+    text-align: justify
+    color: #777777
+
+// =====================================================================
+@media ( max-width: 992px )
+  .expertise
+    padding: 40px 0px
+
+    &__row
+      margin: 0px 0px 50px 0px
+
+    &__column
+      min-width: 320px
+      margin: 0px 0px 50px 0px
+      &:last-child
+        margin: 0px 0px 0px 0px
+
+    &__image
+      margin: 0px 0px 50px 0px
+
+//Media==============================================================================
+@media ( min-width: 992px )
+  .expertise
+
+    &__row
+      display: flex
+      margin: 0px 0px 100px 0px
+
+    &__image
+      flex: 1 1 30%
+
+    &__text
+      flex: 1 1 70%
+      padding: 0px 0px 0px 30px

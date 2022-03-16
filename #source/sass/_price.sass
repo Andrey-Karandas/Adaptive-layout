@@ -1,0 +1,91 @@
+.price
+  font-family: Open Sans
+  background: #F6F8FA
+
+  &__title
+    margin: 0px 0px em(90, 60) 0px
+
+  &__row
+    display: flex
+    flex-wrap: wrap
+    margin: 0px -15px
+
+  &__column
+    flex: 1 1 33.333%
+    min-width: 320px
+    padding: 0px 15px
+
+  &__body
+    background: #FFFFFF
+    text-align: center
+    padding: 20px 0px 50px 0px
+
+  &__plan
+    font-size: rem(16)
+    line-height: prc(22, 16)
+    font-weight: 700
+    color: #242121
+    text-align: left
+    padding: 0px 0px 0px em(20, 16)
+
+  &__price
+    font-size: rem(80)
+    line-height: prc(109, 80)
+    font-weight: 300
+    margin: 0px 0px em(50, 80) 0px
+    span
+      font-size: rem(20)
+      line-height: prc(27, 20)
+      color: #242121
+    &::before
+      content: ''
+      display: inline-block
+      width: 23px
+      height: 54px
+      background: url('../img/price/$.svg') 0 0 no-repeat
+
+  &__list
+    font-size: rem(16)
+    line-height: prc(22, 16)
+    font-weight: 300
+    color: #242121
+    margin: 0px 0px em(65, 16) 0px
+    li
+      margin: 0px 0px em(30, 16) 0px
+      &:last-child
+        margin: 0px 0px 0px 0px
+
+  &__choice
+    font-family: Montserrat
+    font-size: rem(14)
+    line-height: prc(17, 14)
+    letter-spacing: em(1.2, 14)
+    font-weight: 700
+    color: #242121
+
+//Media========================================================================
+@media  ( min-width: 992px )
+  .price
+    padding: 144px 0px 162px 0px
+
+//Media========================================================================
+@media  ( max-width: 992px )
+  .price
+    padding: 40px 0px
+
+    &__column
+      margin: 0px 0px 15px 0px
+      &:last-child
+        margin: 0px 0px 0px 0px
+
+    &__plan
+      font-size: rem(14)
+
+    &__price
+      font-size: rem(60)
+
+    &__list
+      font-size: rem(14)
+
+    &__choice
+      font-size: rem(12)

@@ -1,0 +1,42 @@
+.oxygen
+  background: url('../img/Header-bg.png') center / cover no-repeat
+  min-height: 100vh
+  padding: 210px 0px 60px 0px
+  font-weight: 700
+  text-align: center
+
+  &__title
+    font-size: rem(100)
+    line-height: 1.22
+    color: #FFFFFF
+    margin: 0px 0px em(19, 100) 0px
+
+  &__subtitle
+    font-size: rem(16)
+    line-height: 1.25
+    letter-spacing: em(2.74, 16)
+    margin: 0px 0px em(185, 16) 0px
+    color: #FCBB08
+
+  &__mouse
+    margin: 0 auto
+    width: 26px
+    height: 43px
+    border: 3px solid #FFFFFF
+    border-radius: 100px
+
+  &__ball
+    margin: 5px auto
+    width: 6px
+    height: 6px
+    background: #FFFFFF
+    border-radius: 50%
+    animation: ball 1s ease-in-out infinite 500ms
+    position: relative
+    top: 0
+//Media=====================================================================================
+@media ( max-width: 767px )
+  .oxygen
+
+    &__title
+      font-size: rem(60)

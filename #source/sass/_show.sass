@@ -1,0 +1,61 @@
+.show
+  background: #F6F8FA
+
+  &__title
+    font-size: rem(40)
+    line-height: prc(52, 40)
+    font-weight: 700
+    color: #242121
+    margin: 0px 0px em(25, 40) 0px
+
+  &__text
+    color: #777777
+    text-align: justify
+    margin: 0px 0px em(190, 14) 0px
+
+  &__pagination
+    display: flex
+    align-items: center
+
+  &__dot
+    cursor: pointer
+    width: 6px
+    height: 6px
+    background: #242121
+    opacity: 0.4
+    border-radius: 50%
+    margin: 0px 14px 0px 0px
+    &:last-child
+      margin: 0px 0px 0px 0px
+    &_big
+      width: 10px
+      height: 10px
+      opacity: 1
+
+//Media=============================================================================
+@media ( min-width: 992px )
+  .show
+    position: relative
+    padding: 307px 0px 110px 0px
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      width: 35px
+      height: 35px
+      cursor: pointer
+
+  .show
+    &::before
+      background: url('../img/icons/arrow-left.svg') 0 0 no-repeat
+      transform: translate(50%, -50%)
+    &::after
+      right: 0
+      background: url('../img/icons/arrow-right.svg') 0 0 no-repeat
+      transform: translate(-50%, -50%)
+
+//Media=============================================================================
+@media ( max-width: 992px )
+  .show
+    padding: 50px 0px

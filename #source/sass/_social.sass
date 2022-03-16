@@ -1,0 +1,68 @@
+.social
+  background: #373A39
+
+  &__body
+    max-width: 722px
+    margin: 0px auto
+    padding: 0px 15px
+    text-align: center
+
+  &__logo
+    display: block
+    position: relative
+    margin: 0px 0px 70px 0px
+    &::after
+      content: ''
+      position: absolute
+      bottom: -25px
+      left: 50%
+      width: 150px
+      height: 2px
+      margin: 0px 0px 0px -75px
+      background-color: #FCBB08
+
+  &__link
+    font-size: rem(12)
+    line-height: prc(15, 12)
+    letter-spacing: em(4, 12)
+    font-weight: 300
+    color: #FFFFFF
+
+  &__info
+    font-family: Open Sans
+    font-size: rem(14)
+    line-height: prc(32, 14)
+    color: #A8A8A8
+    margin: 0px 0px em(50, 14) 0px
+
+  &__info-link
+    color: #A8A8A8
+
+  &__shape
+    display: inline-block
+    animation: shape 2s ease-in-out infinite alternate
+    padding: 15px 15px
+    position: relative
+    bottom: 0
+
+//Media===========================================================================
+@media ( min-width: 992px )
+  .social
+    padding: 100px 0px 60px 0px
+
+    &__list
+      display: flex
+      justify-content: space-between
+      margin: 0px 0px 60px 0px
+
+//Media===========================================================================
+@media ( max-width: 992px )
+  .social
+    padding: 40px 0px
+
+    &__list
+      margin: 0px 0px 40px 0px
+      li
+        margin: 0px 0px 15px 0px
+        &:last-child
+          margin: 0px 0px 0px 0px
